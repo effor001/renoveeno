@@ -292,16 +292,20 @@ t1.staggerFrom(".main-menu ul li", 1.2, {
     opacity: 0,
     ease: Expo.easeOut
 }, .2);
-t1.to(".menu-sns .sns", .8, {
-    right: "0%",
+t1.fromTo(".main-menu p", 1, {
+    x: -100,
+    opacity:0},
+    {
+    x:0,
+    opacity:1,
     ease: Expo.easeInOut,
-    delay: .2,
-});
+    delay: 0},"-=1.2"
+);
 t1.staggerFrom(".main-menu .menu-sns .fab", 1.2, {
     x: -100,
     opacity: 0,
     ease: Expo.easeOut
-}, .2);
+}, "-=.2");
 t1.reverse();
 
 $(".menu_button").on("click", function (item) {
