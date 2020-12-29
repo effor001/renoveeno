@@ -955,6 +955,7 @@ header {
 
         @include media(s) {
             flex-direction: column;
+            margin: 80px auto 40px auto;
 
         }
 
@@ -3153,21 +3154,37 @@ footer {
         display: flex;
         width: 80%;
         justify-content: space-around;
-        padding: 120px 0 80px;
+        padding: 120px 0 80px 0;
         margin: 0 auto;
         align-items: center;
-
+        @include media(s) {
+            width: 100%;
+            display: inline-block;
+            padding: 60px 0 40px 0;
+            text-align: center;
+        }
         .copy-bar {
             width: 35vw;
             height: 1px;
             background-color: white;
+            @include media(s) {
+                display: none;
+            }
         }
 
         .copy-sns {
             font-size: 32px;
-
+            @include media(s) {
+                display: flex;
+                width: 50%;
+                margin: 0 auto;
+                justify-content: space-between;
+            }
             .fab {
                 margin: 0 24px;
+                @include media(s) {
+                    margin:24px 0 0 0;
+                }
             }
         }
     }
