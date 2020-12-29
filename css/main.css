@@ -225,8 +225,8 @@ li:hover {
 }
 
 .cursor.active {
-  -webkit-transform: scale(4);
-  transform: scale(4);
+  -webkit-transform: scale(6);
+  transform: scale(6);
   opacity: 1;
 }
 
@@ -622,6 +622,11 @@ header .menu li:first-child:before {
   content: "";
 }
 
+#line-cta .line-btn {
+  width: 450px;
+  margin: 0 auto;
+}
+
 #line-cta .section-wrapper {
   margin-bottom: 0;
 }
@@ -637,6 +642,7 @@ header .menu li:first-child:before {
 }
 
 #line-cta .line-cta img {
+  width: 680px;
   margin: 0 auto;
 }
 
@@ -1115,6 +1121,10 @@ header .menu li:first-child:before {
   position: relative;
 }
 
+#beforeafter .swiper-container {
+  margin: 0 auto;
+}
+
 #beforeafter .ba-wrapper {
   position: relative;
   width: 100%;
@@ -1505,13 +1515,28 @@ strong {
   display: block;
   width: 100%;
   margin: 0 auto;
-  padding: 80px 0 0;
   text-align: center;
+}
+
+#advantage .ad-wrapper .title-wrapper {
+  position: relative;
+  padding: 80px 0;
+}
+
+#advantage .ad-wrapper .title-wrapper:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  width: 1px;
+  height: 100%;
+  background-color: #333333;
+  content: "";
 }
 
 #advantage .ad-wrapper .underbar {
   display: block;
-  margin: 12px 0 12px 18px;
+  margin: 12px auto;
 }
 
 #advantage .border-full-hr:first-child {
@@ -1570,6 +1595,7 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   flex-wrap: no-wrap;
   width: 60%;
   margin: 0 auto;
@@ -1583,6 +1609,7 @@ strong {
 
 .tabs label {
   display: inline-block;
+  position: relative;
   width: 16.666%;
   margin: 0 auto;
   padding: 5px 0;
@@ -1591,21 +1618,6 @@ strong {
   background: #FFF;
   color: #000;
   text-align: center;
-}
-
-.tabs label:nth-child(10) {
-  position: relative;
-}
-
-.tabs label:nth-child(10):after {
-  display: block;
-  position: absolute;
-  top: -335%;
-  right: -1px;
-  width: 1px;
-  height: 335%;
-  background-color: #333333;
-  content: "";
 }
 
 .tabs label:hover {
@@ -2408,6 +2420,9 @@ footer .footer-wrapper .copy-sns .fab {
   .p-bold {
     font-size: 14px;
   }
+  .heading {
+    font-size: 16px;
+  }
   .section-wrapper {
     margin: 80px auto;
   }
@@ -2492,6 +2507,7 @@ footer .footer-wrapper .copy-sns .fab {
   }
   .recommend .section-wrapper {
     width: 60%;
+    margin-top: -80px;
     text-align: justify;
   }
   #line-cta:after {
@@ -2502,7 +2518,7 @@ footer .footer-wrapper .copy-sns .fab {
     margin: 0 auto;
   }
   #line-cta .line-cta {
-    padding: 20px 12px;
+    padding: 20px 36px;
   }
   #line-cta .line-cta img {
     margin: 0 auto;
@@ -2561,7 +2577,12 @@ footer .footer-wrapper .copy-sns .fab {
     text-align: justify;
   }
   #line-cta .smartphone {
-    width: 100%;
+    position: relative;
+    right: 50%;
+    left: 50%;
+    width: 100vw;
+    margin-right: -50vw;
+    margin-left: -50vw;
   }
   #line-cta .smartphone img {
     width: 100%;
@@ -2719,6 +2740,12 @@ footer .footer-wrapper .copy-sns .fab {
     padding: 40px 0;
     text-align: justify;
   }
+  #advantage .ad-wrapper .title-wrapper:after {
+    display: none;
+  }
+  #advantage .ad-wrapper .underbar {
+    margin: 12px 0 12px 18px;
+  }
   #advantage .ad-wrapper .title {
     width: 90%;
     margin: 0 auto;
@@ -2740,9 +2767,6 @@ footer .footer-wrapper .copy-sns .fab {
   }
   .tabs label {
     border-bottom: 0.5px solid #333333;
-  }
-  .tabs label:nth-child(10):after {
-    display: none;
   }
   .tab-content__wrapper {
     width: 90%;
@@ -2819,7 +2843,7 @@ footer .footer-wrapper .copy-sns .fab {
   #customer .slider4 .slide-head .heading {
     width: 100%;
     padding-top: 16px;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: bold;
   }
   #customer .slider4 .slide-head .sub-head {
@@ -2911,14 +2935,14 @@ footer .footer-wrapper .copy-sns .fab {
   }
   #line-bridge .line-bridge__cta {
     width: 90%;
+    margin: 40px auto 0 auto;
     text-align: justify;
   }
   #line-bridge .line-bridge__cta .line-cta {
-    margin-bottom: 180px;
-    padding: 20px 12px;
+    margin: 0 auto 180px auto;
   }
   #line-bridge .line-bridge__hand {
-    width: 60%;
+    width: 40%;
   }
 }
 

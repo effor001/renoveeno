@@ -239,6 +239,9 @@ li {
 
 .heading {
     font-size: 1.6vmax;
+    @include media(s) {
+        font-size: 16px;
+    }
 
 }
 
@@ -329,7 +332,7 @@ li {
 
 .cursor.active {
     opacity: 1;
-    transform: scale(4);
+    transform: scale(6);
 }
 
 .cursor.active::before {
@@ -706,7 +709,7 @@ header {
 .recommend {
     text-align: center;
     cursor: none;
-
+    
 
     .underbar {
         margin: 12px auto;
@@ -720,6 +723,7 @@ header {
         @include media(s) {
             text-align: justify;
             width: 60%;
+            margin-top: -80px;
         }
     }
 
@@ -787,7 +791,6 @@ header {
     position: relative;
     text-align: center;
     padding-top: 10%;
-
     &:before {
         content: "";
         background-color: #FBF5B2;
@@ -796,9 +799,7 @@ header {
         bottom: 0;
         display: block;
         position: absolute;
-
     }
-
     &:after {
         content: "";
         background-color: #FBF5B2;
@@ -813,7 +814,10 @@ header {
         }
 
     }
-
+    .line-btn{
+        width: 450px;
+        margin: 0 auto;
+    }
     .section-wrapper {
         margin-bottom: 0;
 
@@ -834,10 +838,11 @@ header {
 
         img {
             margin: 0 auto;
+           width: 680px;
         }
 
         @include media(s) {
-            padding: 20px 12px;
+            padding: 20px 36px;
 
         }
 
@@ -1047,7 +1052,12 @@ header {
         z-index: 2;
 
         @include media(s) {
-            width: 100%;
+            width:100vw; 
+     position: relative;
+     left: 50%;
+     right: 50%;
+     margin-left: -50vw;
+     margin-right: -50vw;
         }
 
         img {
@@ -1490,7 +1500,9 @@ header {
 }
 #beforeafter {
     position: relative;
-
+    .swiper-container{
+        margin: 0 auto;
+    }
     .ba-wrapper {
         width: 100%;
         margin: 0 auto;
@@ -1992,20 +2004,38 @@ strong {
 
 #advantage {
     .ad-wrapper {
-        padding: 80px 0 0;
+        
         margin: 0 auto;
         width: 100%;
         display: block;
         text-align: center;
-
         @include media(s) {
             padding: 40px 0;
             text-align: justify;
         }
-
+        .title-wrapper{
+            position: relative;
+            padding: 80px 0;
+        &:after {
+            content: "";
+            position: absolute;
+            background-color: $font-color;
+            width: 1px;
+            height: 100%;
+            display: block;
+            top: 0;
+            right: 20%;
+            @include media(s) {
+                display: none;
+            }
+        }
+    }
         .underbar {
             display: block;
+            margin: 12px auto;
+            @include media(s) {
             margin: 12px 0 12px 18px;
+            }
         }
 
         .title {
@@ -2094,13 +2124,13 @@ strong {
     flex-wrap: no-wrap;
     width: 60%;
     margin: 0 auto;
+    position: relative;
     font-family: br-b;
-
     @include media(s) {
         flex-wrap: wrap;
         width: 90%;
     }
-
+   
     .fal {
         font-size: 22px;
         margin-top: 8px;
@@ -2112,35 +2142,19 @@ strong {
     margin: 0 auto;
     width: 16.666%;
     padding: 5px 0;
-
+    position: relative;
     text-align: center;
     color: #000;
     background: #FFF;
     border-right: 0.5px solid $font-color;
     border-left: 0.5px solid $font-color;
-
+    
     @include media(s) {
         border-bottom: 0.5px solid #333333;
     }
+    
 
-    &:nth-child(10) {
-        position: relative;
-
-        &:after {
-            content: "";
-            position: absolute;
-            background-color: $font-color;
-            width: 1px;
-            height: 335%;
-            display: block;
-            top: -335%;
-            right: -1px;
-
-            @include media(s) {
-                display: none;
-            }
-        }
-    }
+    
 }
 
 .tabs label:hover {
@@ -2777,7 +2791,7 @@ strong {
                 font-size: 1.6vmax;
 
                 @include media(s) {
-                    font-size: 24px;
+                    font-size: 16px;
                     font-weight: bold;
                     padding-top: 16px;
                     width: 100%;
@@ -3088,6 +3102,7 @@ dt {
             @include media(s) {
                 width: 90%;
                 text-align: justify;
+                margin:  40px auto 0 auto;
             }
 
             .bridge-arrow {
@@ -3098,8 +3113,8 @@ dt {
                 padding: 24px 0;
 
                 @include media(s) {
-                    padding: 20px 12px;
-                    margin-bottom: 180px;
+                   
+                    margin:0 auto 180px auto;
                 }
 
                 &:hover {
@@ -3114,7 +3129,7 @@ dt {
             bottom: 0;
 
             @include media(s) {
-                width: 60%;
+                width: 40%;
             }
         }
     }
