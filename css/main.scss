@@ -791,6 +791,9 @@ header {
     position: relative;
     text-align: center;
     padding-top: 10%;
+    @include media(s) {
+        padding-top:5%;
+    }
     &:before {
         content: "";
         background-color: #FBF5B2;
@@ -810,7 +813,7 @@ header {
         position: absolute;
 
         @include media(s) {
-            height: 2450px;
+            height: 2530px;
         }
 
     }
@@ -842,7 +845,7 @@ header {
         }
 
         @include media(s) {
-            padding: 20px 36px;
+            padding: 40px 12px;
 
         }
 
@@ -889,6 +892,9 @@ header {
     .fal {
         font-size: 24px;
         margin-right: 12px;
+        @include media(s) {
+            font-size: 20px;
+        }
     }
 
     .line-present {
@@ -1038,6 +1044,7 @@ header {
 
                 @include media(s) {
                     text-align: justify;
+                    padding-top:16px;
                 }
             }
 
@@ -1539,6 +1546,7 @@ header {
         margin-top: -40px;
         @include media(s) {
             height: 850px;
+            margin-top:0;
         }
         &:before {
             content: "";
@@ -2588,6 +2596,7 @@ strong {
 }
 
 #fourpointsp {
+    margin-top:-17px;
     .tab-content__wrapper {
         @include media(s) {
             width: 90%;

@@ -1973,6 +1973,7 @@ strong {
 }
 
 #fourpointsp {
+  margin-top: -17px;
   /* 次ページボタンのスタイル */
   /* 前ページボタンのスタイル */
 }
@@ -2510,15 +2511,18 @@ footer .footer-wrapper .copy-sns .fab {
     margin-top: -80px;
     text-align: justify;
   }
+  #line-cta {
+    padding-top: 5%;
+  }
   #line-cta:after {
-    height: 2450px;
+    height: 2530px;
   }
   #line-cta .section-wrapper {
     width: 90%;
     margin: 0 auto;
   }
   #line-cta .line-cta {
-    padding: 20px 36px;
+    padding: 40px 12px;
   }
   #line-cta .line-cta img {
     margin: 0 auto;
@@ -2529,6 +2533,9 @@ footer .footer-wrapper .copy-sns .fab {
   #line-cta .line-btn {
     width: 80%;
     margin: 20px auto;
+  }
+  #line-cta .fal {
+    font-size: 20px;
   }
   #line-cta .line-present p {
     z-index: 3;
@@ -2574,6 +2581,7 @@ footer .footer-wrapper .copy-sns .fab {
     font-size: 16px;
   }
   #line-cta .present-wrapper .gift-para .para-p {
+    padding-top: 16px;
     text-align: justify;
   }
   #line-cta .smartphone {
@@ -2660,6 +2668,7 @@ footer .footer-wrapper .copy-sns .fab {
   }
   #beforeafter #wrapper {
     height: 850px;
+    margin-top: 0;
   }
   #beforeafter #wrapper:before {
     left: 18px;
